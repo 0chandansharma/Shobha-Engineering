@@ -21,14 +21,21 @@ export default function Footer() {
             </p>
             <div style={{ display: 'flex', gap: 10, marginTop: 20, flexWrap: 'wrap' }}>
               {[
-                { label: 'in', href: 'https://www.linkedin.com/company/shobhaengineeringworkshop/', title: 'LinkedIn' },
-                { label: 'IM', href: 'https://www.indiamart.com/shobha-engg-workshop/', title: 'IndiaMART' },
-                { label: 'fb', href: 'https://www.facebook.com/people/Shobha-Engineering-Workshop/61590253234646/', title: 'Facebook' },
-                { label: 'WA', href: 'https://wa.me/919415154200', title: 'WhatsApp' },
+                { logo: '/content/images/social/linkedin.png',  href: 'https://www.linkedin.com/company/shobhaengineeringworkshop/', title: 'LinkedIn',  bg: '#0A66C2' },
+                { logo: '/content/images/social/indiamart.png', href: 'https://www.indiamart.com/shobha-engg-workshop/',             title: 'IndiaMART', bg: '#fff' },
+                { logo: '/content/images/social/facebook.svg',  href: 'https://www.facebook.com/people/Shobha-Engineering-Workshop/61590253234646/', title: 'Facebook', bg: '#1877F2' },
+                { logo: '/content/images/social/whatsapp.svg',  href: 'https://wa.me/919415154200',                                  title: 'WhatsApp',  bg: 'transparent' },
               ].map(s => (
-                <a key={s.label} href={s.href} title={s.title} target="_blank" rel="noopener noreferrer"
-                  style={{ width: 36, height: 36, borderRadius: 6, background: 'rgba(255,255,255,0.06)', display: 'grid', placeItems: 'center', fontSize: 11, fontWeight: 700, color: '#C7D2DF', letterSpacing: 0.4, textDecoration: 'none' }}>
-                  {s.label}
+                <a key={s.title} href={s.href} title={s.title} target="_blank" rel="noopener noreferrer"
+                  style={{
+                    width: 40, height: 40, borderRadius: 8,
+                    background: s.bg,
+                    border: s.bg === '#fff' ? '1px solid rgba(255,255,255,0.15)' : 'none',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    padding: s.title === 'IndiaMART' ? 4 : 6,
+                    textDecoration: 'none', flexShrink: 0,
+                  }}>
+                  <img src={s.logo} alt={s.title} style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }} />
                 </a>
               ))}
             </div>
