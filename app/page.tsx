@@ -9,20 +9,20 @@ export const metadata: Metadata = {
 };
 
 const CLIENTS = [
-  { name: 'PTC PVT LTD',         logo: '/content/images/clients/ptc.png' },
-  { name: 'Prag Polymers',        logo: '/content/images/clients/prag-polymers.png' },
-  { name: 'RDSO',                 logo: '/content/images/clients/rdso.png' },
-  { name: 'Lulu',                 logo: '/content/images/clients/lulu.png' },
-  { name: 'India Pesticides',     logo: '/content/images/clients/india-pesticides.png' },
-  { name: 'Swarup Chemical',      logo: '/content/images/clients/swarup-chemical.png' },
-  { name: 'Mohan Goldwater',      logo: '/content/images/clients/mohan-goldwater.png' },
-  { name: 'MEIL',                 logo: '/content/images/clients/meil.png' },
-  { name: 'Aerolley Technologies',logo: '/content/images/clients/aerolley.png' },
-  { name: 'Katerra India',        logo: '/content/images/clients/katerra.png' },
-  { name: 'Galvano India',        logo: '/content/images/clients/galvano.png' },
-  { name: 'Anand Buildtech',      logo: '/content/images/clients/anand-buildtech.png' },
-  { name: 'PN International',     logo: '/content/images/clients/pn-international.png' },
-  { name: 'Railways',             logo: '/content/images/clients/indian-railways.png' },
+  { name: 'PTC India', logo: '/content/images/clients/PTC_logo.jpg' },
+  { name: 'Prag Group', logo: '/content/images/clients/parag.png' },
+  { name: 'RDSO', logo: '/content/images/clients/rdso.jpg' },
+  { name: 'Lulu', logo: '/content/images/clients/lulu.png' },
+  { name: 'India Pesticides', logo: '/content/images/clients/india-pesticides.png' },
+  { name: 'Swarup Chemicals', logo: '/content/images/clients/swarup.png' },
+  { name: 'Goldwater Breweries', logo: '/content/images/clients/mohan.jpeg' },
+  { name: 'MEIL', logo: '/content/images/clients/meil.png' },
+  { name: 'Aerolloy', logo: '/content/images/clients/aerolloy.jpeg' },
+  { name: 'Katerra Design', logo: '/content/images/clients/katerra.jpeg' },
+  { name: 'Galvano India', logo: '/content/images/clients/galvano.jpg' },
+  { name: 'Anand Buildtech', logo: '/content/images/clients/anand.jpeg' },
+  { name: 'P.N. International', logo: '/content/images/clients/pni.png' },
+  { name: 'Railways', logo: '/content/images/clients/indian-railways.png' },
 ];
 
 const CAPABILITIES = [
@@ -91,13 +91,13 @@ const PRODUCT_PREVIEWS = [
 ];
 
 const CAROUSEL_VIDEOS = [
-  { src: '/content/videos/compressed/workshop-video-01.mp4',                  label: 'Workshop Operations',    sub: 'Live footage from our Lucknow facility', poster: '/content/images/workshop/workshop-floor-wide-BEST.jpeg' },
-  { src: '/content/videos/compressed/workshop-video-03.mp4',                  label: 'Fabrication in Progress', sub: 'Heavy steel work on the floor',          poster: '/content/images/products/product-pressure-vessel-pump-skid-01.jpeg' },
-  { src: '/content/videos/compressed/stock-video-01.mp4', label: 'Industrial Manufacturing', sub: 'Precision fabrication processes',        poster: '/content/images/stock-pexels/stock-welding-arc-blue-portrait-01.jpg' },
-  { src: '/content/videos/compressed/stock-video-02.mp4', label: 'Steel Processing',         sub: 'Cutting, forming, and assembly',         poster: '/content/images/stock-pexels/stock-welding-structural-steel-shed.jpg' },
-  { src: '/content/videos/compressed/stock-video-03.mp4', label: 'Workshop Processes',       sub: 'End-to-end fabrication workflow',         poster: '/content/images/stock-pexels/stock-drilling-milling-closeup.jpg' },
-  { src: '/content/videos/compressed/stock-video-04.mp4', label: 'Quality Work',             sub: 'Skilled workmanship on every job',        poster: '/content/images/stock-pexels/stock-grinding-sparks-closeup.jpg' },
-  { src: '/content/videos/compressed/workshop-video-02.mp4',                  label: 'Our Team at Work',         sub: 'Experienced fabricators and machinists',  poster: '/content/images/process/process-welding-pipes-worker.jpeg' },
+  { src: '/content/videos/compressed/workshop-video-01.mp4', label: 'Workshop Operations', sub: 'Live footage from our Lucknow facility', poster: '/content/images/workshop/workshop-floor-wide-BEST.jpeg' },
+  { src: '/content/videos/compressed/workshop-video-03.mp4', label: 'Fabrication in Progress', sub: 'Heavy steel work on the floor', poster: '/content/images/products/product-pressure-vessel-pump-skid-01.jpeg' },
+  { src: '/content/videos/compressed/stock-video-01.mp4', label: 'Industrial Manufacturing', sub: 'Precision fabrication processes', poster: '/content/images/stock-pexels/stock-welding-arc-blue-portrait-01.jpg' },
+  { src: '/content/videos/compressed/stock-video-02.mp4', label: 'Steel Processing', sub: 'Cutting, forming, and assembly', poster: '/content/images/stock-pexels/stock-welding-structural-steel-shed.jpg' },
+  { src: '/content/videos/compressed/stock-video-03.mp4', label: 'Workshop Processes', sub: 'End-to-end fabrication workflow', poster: '/content/images/stock-pexels/stock-drilling-milling-closeup.jpg' },
+  { src: '/content/videos/compressed/stock-video-04.mp4', label: 'Quality Work', sub: 'Skilled workmanship on every job', poster: '/content/images/stock-pexels/stock-grinding-sparks-closeup.jpg' },
+  { src: '/content/videos/compressed/workshop-video-02.mp4', label: 'Our Team at Work', sub: 'Experienced fabricators and machinists', poster: '/content/images/process/process-welding-pipes-worker.jpeg' },
 ];
 
 const CERT_ITEMS = [
@@ -228,15 +228,18 @@ export default function HomePage() {
               <div key={c.name} style={{
                 border: '1px solid var(--line)', borderRadius: 10,
                 padding: '10px 8px', textAlign: 'center',
-                background: '#fff', display: 'flex',
-                flexDirection: 'column', alignItems: 'center',
+                background: '#fff',
+                display: 'flex', flexDirection: 'column', alignItems: 'center',
                 justifyContent: 'center', gap: 6, minHeight: 72,
               }}>
                 <img
                   src={c.logo}
                   alt={c.name}
                   loading="lazy"
-                  style={{ height: 32, width: 'auto', maxWidth: '100%', objectFit: 'contain', display: 'block' }}
+                  style={{
+                    height: 32, maxWidth: '100%', objectFit: 'contain', display: 'block',
+                    width: c.name === 'Galvano India' ? 80 : 'auto',
+                  }}
                 />
                 <span style={{ fontSize: 10.5, fontWeight: 700, color: 'var(--ink-2)', lineHeight: 1.2 }}>{c.name}</span>
               </div>
