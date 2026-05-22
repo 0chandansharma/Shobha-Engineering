@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'About Us — Shobha Engineering Workshop',
   description:
-    'Founded in 1998 by a hands-on engineer in Lucknow, Shobha Engineering Workshop has grown into a trusted fabrication partner for Indian Railways, RDSO, and leading industrial corporations. Learn our story.',
+    'Founded in 1998 in Lucknow, Shobha Engineering Workshop has grown into a trusted fabrication partner for leading industrial corporations and enterprises across India. Learn our story.',
 };
 
 const PRINCIPLES = [
@@ -32,9 +32,9 @@ const PRINCIPLES = [
 
 const STATS = [
   { num: '25+', label: 'Years in operation', sub: 'Est. 1998, Lucknow' },
-  { num: '500+', label: 'Projects delivered', sub: 'Across railways, govt & industry' },
+  { num: '500+', label: 'Projects delivered', sub: 'Across industries & sectors' },
   { num: '25+', label: 'Skilled workmen', sub: 'Scalable to 100+ for large jobs' },
-  { num: '100+', label: 'Clients served', sub: 'From SMEs to national railways' },
+  { num: '100+', label: 'Clients served', sub: 'Across industries & enterprises' },
 ];
 
 function CTABanner() {
@@ -74,7 +74,7 @@ export default function AboutPage() {
             Built on 25 years of hands-on engineering.
           </h1>
           <p style={{ fontSize: 18, maxWidth: 580, color: '#C7D2DF' }}>
-            From a single workshop in Alambagh, Lucknow, to a trusted fabrication partner for Indian Railways, RDSO, and dozens of industrial corporations — this is the Shobha Engineering story.
+            From a workshop in Alambagh, Lucknow, to a trusted fabrication partner for leading industrial corporations across India — this is the Shobha Engineering story.
           </p>
         </div>
       </section>
@@ -94,10 +94,10 @@ export default function AboutPage() {
                 Shobha Engineering Workshop was founded in 1998 by a hands-on engineer who believed that quality fabrication did not need to come at a premium price — just honest work, calibrated tools, and skilled people.
               </p>
               <p>
-                Starting with a small team in Alambagh, Lucknow, we quickly gained a reputation for delivering precision components to local industries. Word spread, and within a few years we were supplying parts to Indian Railways, RDSO Lucknow, and Northern Railways — a milestone that validated our quality systems.
+                Starting from Alambagh, Lucknow, we built a reputation for delivering precision components across industries. Over the years, word spread — and our client base grew to span chemicals, breweries, manufacturing, construction, and more.
               </p>
               <p>
-                Today, 25+ years on, we have a workforce of experienced fabricators, machinists, and site engineers, capable of scaling from small precision components to large structural fabrication projects. Our client list spans government, railways, chemicals, breweries, construction, and dozens of small and medium enterprises.
+                Today, 25+ years on, we have a workforce of experienced fabricators, machinists, and site engineers — capable of handling everything from precision components to large structural fabrication projects. Our client list spans chemicals, breweries, manufacturing, construction, and dozens of enterprises across India.
               </p>
               <p>
                 We are IIA members (ID: 35191), TIEIOA members, GST and MSME registered — and our work speaks for itself.
@@ -171,7 +171,7 @@ export default function AboutPage() {
             <div className="eyebrow">Credentials</div>
             <h2>Memberships &amp; registrations</h2>
             <p style={{ maxWidth: 520, margin: '12px auto 0' }}>
-              We are formally registered with industry bodies and government authorities — giving you assurance on compliance and quality.
+              We are formally registered with industry bodies and national authorities — giving you assurance on compliance and quality.
             </p>
           </div>
           <style>{`
@@ -251,7 +251,7 @@ export default function AboutPage() {
                     <h3 style={{ fontSize: 16, marginBottom: 0 }}>MSME Registered</h3>
                   </div>
                   <p style={{ fontSize: 13, marginBottom: 4 }}>Udyam Certified</p>
-                  <p style={{ fontSize: 12, color: 'var(--muted)', marginBottom: 0 }}>Ministry of MSME, Govt. of India</p>
+                  <p style={{ fontSize: 12, color: 'var(--muted)', marginBottom: 0 }}>Ministry of MSME, India</p>
                 </div>
               </div>
             </div>

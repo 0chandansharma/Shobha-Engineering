@@ -24,7 +24,7 @@ const SERVICES = [
     num: '02',
     title: 'Precision Machining',
     img: '/content/images/stock-pexels/stock-drilling-milling-closeup.jpg',
-    desc: 'Our conventional turning, milling, boring, and drilling operations produce tight-tolerance components for railways, process equipment, and industrial machinery. We work from drawings, samples, or reverse-engineered specifications.',
+    desc: 'Our conventional turning, milling, boring, and drilling operations produce tight-tolerance components for process equipment, and industrial machinery. We work from drawings, samples, or reverse-engineered specifications.',
     bullets: [
       'Lathe turning — OD, ID, threading, facing',
       'Milling, boring, and keyway cutting',

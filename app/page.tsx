@@ -5,13 +5,14 @@ import VideoCarousel from '@/components/VideoCarousel';
 export const metadata: Metadata = {
   title: 'Iron & Steel Fabricators, Lucknow — Since 1998',
   description:
-    'Shobha Engineering Workshop — Lucknow-based manufacturers and fabricators of iron & steel components. Trusted by Indian Railways, RDSO, and leading corporates. Heavy fabrication, precision machining, pressure vessels. Call +91 94151 54200.',
+    'Shobha Engineering Workshop — Lucknow-based manufacturers and fabricators of iron & steel components. Heavy fabrication, precision machining, pressure vessels. Trusted by leading industrial clients since 1998. Call +91 94151 54200.',
 };
 
 const CLIENTS = [
-  'Indian Railways',
+  'PTC PVT LTD',
+  'Prag Polymers',
   'RDSO Lucknow',
-  'Northern Railways',
+  'Lulu Mall',
   'India Pesticides Ltd',
   'Swarup Chemical',
   'Mohan Goldwater Breweries',
@@ -20,8 +21,7 @@ const CLIENTS = [
   'Galvano India',
   'Anand Buildtech',
   'PN International',
-  'PTC PVT LTD',
-  'Prag Polymers',
+  'Northern Railways',
 ];
 
 const CAPABILITIES = [
@@ -60,8 +60,8 @@ const PROJECT_CARDS = [
     img: '/content/images/products/product-pressure-vessel-pump-skid-01.jpeg',
   },
   {
-    title: 'Government',
-    sub: 'SS/MS water tanker for Gram Panchayat',
+    title: 'Municipal',
+    sub: 'SS/MS water tanker — municipal utility project',
     year: '2021',
     img: '/content/images/products/product-water-tanker-gramPanchayat-client.png',
   },
@@ -86,7 +86,7 @@ const PRODUCT_PREVIEWS = [
   { title: 'Pressure Vessels', sub: 'ASME / IS-2825 fabricated vessels', img: '/content/images/products/product-pressure-vessels-multiple.webp' },
   { title: 'Pipe Elbows & Bends', sub: 'Large-dia, custom-angle bends', img: '/content/images/products/product-large-pipe-elbow-fabricated.webp' },
   { title: 'Heat Exchangers', sub: 'Shell & tube, filter housings', img: '/content/images/products/product-heat-exchanger-filter-housing.webp' },
-  { title: 'Water Tankers', sub: 'SS/MS for govt & industrial use', img: '/content/images/products/product-water-tanker-gramPanchayat-client.png' },
+  { title: 'Water Tankers', sub: 'SS/MS for municipal & industrial use', img: '/content/images/products/product-water-tanker-gramPanchayat-client.png' },
 ];
 
 const CAROUSEL_VIDEOS = [
@@ -104,7 +104,7 @@ const CERT_ITEMS = [
   { title: 'TIEIOA Member', sub: 'Talkatora Industrial Estate Owners Assoc.', detail: '' },
   { title: 'GST Registered', sub: '09AUTPS3751P1ZG', detail: 'Govt. Tax Verified' },
   { title: 'MSME Registered', sub: 'Udyam Certified', detail: 'Ministry of MSME, Govt of India' },
-  { title: '100+ Clients Served', sub: 'Railways · Corporate · Govt · SMEs', detail: 'Across India' },
+  { title: '100+ Clients Served', sub: 'Industrial · Corporate · Enterprises', detail: 'Across India' },
   { title: 'Est. 1998', sub: '25+ years · Lucknow UP', detail: 'Family-led · Quality first' },
 ];
 
@@ -152,7 +152,7 @@ export default function HomePage() {
                 <br />Built to last decades.
               </h1>
               <p style={{ fontSize: 18, maxWidth: 500, marginBottom: 32, color: 'var(--ink-2)' }}>
-                Lucknow-based manufacturers and fabricators of iron and steel components — trusted by Indian Railways, RDSO, and leading corporates across India.
+                Lucknow-based manufacturers and fabricators of iron and steel components — trusted by leading industries and corporates for precision, reliability, and honest work.
               </p>
               <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginBottom: 48 }}>
                 <Link href="/contact" className="btn btn-primary">Request a Quote →</Link>
@@ -215,7 +215,7 @@ export default function HomePage() {
       <section className="section--soft" style={{ padding: '48px 0' }}>
         <div className="container">
           <p style={{ textAlign: 'center', fontSize: 13, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 28 }}>
-            Trusted vendor for leading corporates, railways &amp; government bodies
+            Trusted by leading industries, corporates &amp; enterprises
           </p>
           <style>{`
             .client-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; }
@@ -243,7 +243,7 @@ export default function HomePage() {
             </div>
           </div>
           <p style={{ textAlign: 'center', fontSize: 13, color: 'var(--muted)', marginTop: 20 }}>
-            Including many small &amp; medium enterprises across Uttar Pradesh and India
+            Including enterprises and industries across Uttar Pradesh and India
           </p>
         </div>
       </section>
@@ -262,14 +262,14 @@ export default function HomePage() {
               <div className="eyebrow">Over two decades of delivery</div>
               <h2 style={{ marginBottom: 24 }}>25 years on the floor. Hundreds of projects delivered.</h2>
               <p style={{ marginBottom: 40 }}>
-                Founded in 1998, Shobha Engineering Workshop has grown from a small Lucknow workshop to a trusted fabrication partner for India&apos;s top railways, government bodies, and industrial corporations.
+                Since 1998, Shobha Engineering Workshop has built a reputation as a trusted fabrication partner for leading industries and corporates across India.
               </p>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
                 {[
                   { num: '25+', label: 'Years in business' },
                   { num: '500+', label: 'Projects delivered' },
                   { num: '25+', label: 'Skilled workmen' },
-                  { num: 'Govt.', label: 'Approved vendor' },
+                  { num: '25+', label: 'Years trusted' },
                 ].map(s => (
                   <div key={s.label} style={{ background: 'var(--primary-light)', borderRadius: 10, padding: '20px 22px' }}>
                     <div style={{ fontSize: 30, fontWeight: 800, color: 'var(--primary)', lineHeight: 1 }}>{s.num}</div>

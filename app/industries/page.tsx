@@ -2,18 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Industries We Serve — Railways, Chemical, Government & More',
+  title: 'Industries We Serve — Chemical, Construction, Food & More',
   description:
-    'Shobha Engineering Workshop supplies precision fabricated components to Indian Railways, RDSO, chemical plants, breweries, government bodies, construction companies, and small & medium enterprises across India.',
+    'Shobha Engineering Workshop supplies precision fabricated components to chemical plants, breweries, construction companies, surface treatment firms, technology companies, and enterprises across India.',
 };
 
 const INDUSTRIES = [
   {
-    title: 'Indian Railways & RDSO',
-    desc: 'Approved vendor for Indian Railways, RDSO Lucknow, and Northern Railways. We supply structural components, machined parts, and fabricated assemblies to exacting railway standards.',
+    title: 'Heavy Industry & Infrastructure',
+    desc: 'Structural steel assemblies, machined components, and fabricated structures for large-scale industrial and infrastructure projects requiring high-precision work.',
     img: '/content/images/projects/project-heavy-structure-nightwork-BEST.jpeg',
-    alt: 'Heavy structural fabrication for railways',
-    clients: ['Indian Railways', 'RDSO Lucknow', 'Northern Railways'],
+    alt: 'Heavy structural fabrication for industry',
+    clients: ['PTC PVT LTD', 'Aerolley Technologies'],
   },
   {
     title: 'Chemical & Process Industry',
@@ -37,11 +37,11 @@ const INDUSTRIES = [
     clients: ['Katerra India', 'Anand Buildtech'],
   },
   {
-    title: 'Government & Municipal Bodies',
-    desc: 'Water tankers, storage vessels, and utility structures for Gram Panchayats, municipal bodies, and government agencies — compliant with public sector procurement standards.',
+    title: 'Municipal & Utility Projects',
+    desc: 'Water tankers, storage vessels, and utility structures for municipal and public utility projects — built to specification and delivered on time.',
     img: '/content/images/products/product-water-tanker-gramPanchayat-client.png',
-    alt: 'Water tanker for Gram Panchayat',
-    clients: ['Gram Panchayat Clients', 'Government Bodies'],
+    alt: 'Water tanker for municipal utility project',
+    clients: ['Municipal Utility Clients'],
   },
   {
     title: 'Surface Finishing & Galvanizing',
@@ -58,11 +58,11 @@ const INDUSTRIES = [
     clients: ['Aerolley Technologies', 'PTC PVT LTD'],
   },
   {
-    title: 'Small & Medium Enterprises',
-    desc: 'One-off and batch production for SMEs across Uttar Pradesh and India. We are approachable, affordable, and reliable — the fabricator of choice for growing businesses.',
+    title: 'Enterprises & Manufacturers',
+    desc: 'One-off and batch production for enterprises across Uttar Pradesh and India. We are approachable and reliable — a trusted fabrication partner for businesses of all sizes.',
     img: '/content/images/workshop/workshop-floor-wide-BEST.jpeg',
-    alt: 'Workshop floor serving small and medium enterprises',
-    clients: ['Prag Polymers', 'PN International', 'Many more SMEs'],
+    alt: 'Workshop floor at Shobha Engineering',
+    clients: ['Prag Polymers', 'PN International', 'And many more'],
   },
 ];
 
@@ -103,7 +103,7 @@ export default function IndustriesPage() {
             Serving industry across India since 1998.
           </h1>
           <p style={{ fontSize: 18, maxWidth: 580, color: '#C7D2DF' }}>
-            From Indian Railways to Gram Panchayats, from chemical plants to technology firms — our fabricated components power operations across sectors.
+            From chemical plants to breweries, from construction firms to technology companies — our fabricated components power operations across sectors.
           </p>
         </div>
       </section>
@@ -150,11 +150,11 @@ export default function IndustriesPage() {
           <div className="eyebrow">Our clients</div>
           <h2 style={{ marginBottom: 16 }}>100+ clients served across India</h2>
           <p style={{ maxWidth: 560, margin: '0 auto 40px' }}>
-            From large government organisations and national railways to neighbourhood factories — we treat every client with the same commitment to quality.
+            From large industrial corporations to neighbourhood factories — we treat every client with the same commitment to quality.
           </p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap', maxWidth: 800, margin: '0 auto' }}>
             {[
-              'Indian Railways', 'RDSO Lucknow', 'Northern Railways', 'India Pesticides Ltd',
+              'India Pesticides Ltd',
               'Swarup Chemical', 'Mohan Goldwater Breweries', 'Aerolley Technologies',
               'Katerra India', 'Galvano India', 'Anand Buildtech', 'PN International',
               'PTC PVT LTD', 'Prag Polymers',

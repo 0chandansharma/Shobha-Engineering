@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: '%s | Shobha Engineering Workshop',
   },
   description:
-    'Lucknow-based iron & steel fabricators since 1998. Heavy fabrication, precision machining, pressure vessels, industrial structures. Approved vendor for Indian Railways, RDSO & leading corporates. Call +91 94151 54200.',
+    'Lucknow-based iron & steel fabricators since 1998. Heavy fabrication, precision machining, pressure vessels, industrial structures. Trusted by leading corporates across India. Call +91 94151 54200.',
   keywords: [
     'steel fabrication Lucknow',
     'iron fabrication Lucknow',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: 'Shobha Engineering Workshop',
     title: 'Shobha Engineering Workshop — Iron & Steel Fabricators, Lucknow',
     description:
-      'Lucknow-based iron & steel fabricators since 1998. Trusted by Indian Railways, RDSO & leading corporates.',
+      'Lucknow-based iron & steel fabricators since 1998. Trusted by leading corporates and industrial clients across India.',
     images: [{ url: '/content/images/workshop/workshop-floor-wide-BEST.jpeg', width: 1200, height: 630, alt: 'Shobha Engineering Workshop floor' }],
   },
   twitter: {
