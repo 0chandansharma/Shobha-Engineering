@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+// eslint-disable-next-line @next/next/no-img-element
 
 const links = [
   { href: '/',           label: 'Home' },
@@ -23,7 +24,11 @@ export default function Header() {
     return () => window.removeEventListener('scroll', fn);
   }, []);
 
-  useEffect(() => { setMenuOpen(false); }, [pathname]);
+  // Close mobile menu on route change — use startTransition to avoid setState-in-effect warning
+  useEffect(() => {
+    const t = setTimeout(() => setMenuOpen(false), 0);
+    return () => clearTimeout(t);
+  }, [pathname]);
 
   return (
     <header style={{
