@@ -19,13 +19,17 @@ export default function Footer() {
             <p style={{ fontSize: 14, lineHeight: 1.7, color: '#94A3B8', maxWidth: 320 }}>
               Lucknow-based manufacturers and fabricators of precision iron & steel components. Quality without compromise — since 1998.
             </p>
-            <div style={{ display: 'flex', gap: 10, marginTop: 20 }}>
+            <div style={{ display: 'flex', gap: 10, marginTop: 20, flexWrap: 'wrap' }}>
               {[
-                { label: 'LI', href: '#', title: 'LinkedIn' },
-                { label: 'IM', href: '#', title: 'IndiaMART' },
+                { label: 'in', href: 'https://www.linkedin.com/company/shobhaengineeringworkshop/', title: 'LinkedIn' },
+                { label: 'IM', href: 'https://www.indiamart.com/shobha-engg-workshop/', title: 'IndiaMART' },
+                { label: 'fb', href: 'https://www.facebook.com/people/Shobha-Engineering-Workshop/61590253234646/', title: 'Facebook' },
                 { label: 'WA', href: 'https://wa.me/919415154200', title: 'WhatsApp' },
               ].map(s => (
-                <a key={s.label} href={s.href} title={s.title} target="_blank" rel="noopener noreferrer" style={{ width: 36, height: 36, borderRadius: 6, background: 'rgba(255,255,255,0.06)', display: 'grid', placeItems: 'center', fontSize: 11, fontWeight: 700, color: '#C7D2DF', letterSpacing: 0.4 }}>{s.label}</a>
+                <a key={s.label} href={s.href} title={s.title} target="_blank" rel="noopener noreferrer"
+                  style={{ width: 36, height: 36, borderRadius: 6, background: 'rgba(255,255,255,0.06)', display: 'grid', placeItems: 'center', fontSize: 11, fontWeight: 700, color: '#C7D2DF', letterSpacing: 0.4, textDecoration: 'none' }}>
+                  {s.label}
+                </a>
               ))}
             </div>
           </div>
@@ -54,8 +58,11 @@ export default function Footer() {
                 <span>25 A, Talkatora Rd, Railway Colony<br/>Alambagh, Lucknow, UP 226004</span>
               </li>
               <li style={{ display: 'flex', gap: 10 }}>
-                <span style={{ color: 'var(--accent)' }}>📞</span>
-                <a href="tel:+919415154200" style={{ color: '#C7D2DF' }}>+91 94151 54200</a>
+                <span style={{ color: 'var(--accent)', flexShrink: 0 }}>📞</span>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                  <a href="tel:+919415154200" style={{ color: '#C7D2DF' }}>+91 94151 54200</a>
+                  <a href="tel:+919455870703" style={{ color: '#C7D2DF' }}>+91 94558 70703</a>
+                </div>
               </li>
               <li style={{ display: 'flex', gap: 10 }}>
                 <span style={{ color: 'var(--accent)' }}>✉</span>

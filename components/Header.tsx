@@ -47,6 +47,7 @@ export default function Header() {
           </div>
           <div style={{ display: 'flex', gap: 20, flexWrap: 'wrap' }}>
             <a href="tel:+919415154200" style={{ color: '#fff', fontWeight: 600 }}>+91 94151 54200</a>
+            <a href="tel:+919455870703" style={{ color: '#C7D2DF' }} className="hide-sm">+91 94558 70703</a>
             <a href="mailto:csiitism@gmail.com" style={{ color: '#C7D2DF' }} className="hide-sm">csiitism@gmail.com</a>
           </div>
         </div>
