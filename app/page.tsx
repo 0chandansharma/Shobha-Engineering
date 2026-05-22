@@ -9,19 +9,20 @@ export const metadata: Metadata = {
 };
 
 const CLIENTS = [
-  'PTC PVT LTD',
-  'Prag Polymers',
-  'RDSO Lucknow',
-  'Lulu Mall',
-  'India Pesticides Ltd',
-  'Swarup Chemical',
-  'Mohan Goldwater Breweries',
-  'Aerolley Technologies',
-  'Katerra India',
-  'Galvano India',
-  'Anand Buildtech',
-  'PN International',
-  'Northern Railways',
+  { name: 'PTC PVT LTD',         logo: '/content/images/clients/ptc.png' },
+  { name: 'Prag Polymers',        logo: '/content/images/clients/prag-polymers.png' },
+  { name: 'RDSO',                 logo: '/content/images/clients/rdso.png' },
+  { name: 'Lulu',                 logo: '/content/images/clients/lulu.png' },
+  { name: 'India Pesticides',     logo: '/content/images/clients/india-pesticides.png' },
+  { name: 'Swarup Chemical',      logo: '/content/images/clients/swarup-chemical.png' },
+  { name: 'Mohan Goldwater',      logo: '/content/images/clients/mohan-goldwater.png' },
+  { name: 'MEIL',                 logo: '/content/images/clients/meil.png' },
+  { name: 'Aerolley Technologies',logo: '/content/images/clients/aerolley.png' },
+  { name: 'Katerra India',        logo: '/content/images/clients/katerra.png' },
+  { name: 'Galvano India',        logo: '/content/images/clients/galvano.png' },
+  { name: 'Anand Buildtech',      logo: '/content/images/clients/anand-buildtech.png' },
+  { name: 'PN International',     logo: '/content/images/clients/pn-international.png' },
+  { name: 'Railways',             logo: '/content/images/clients/indian-railways.png' },
 ];
 
 const CAPABILITIES = [
@@ -224,20 +225,28 @@ export default function HomePage() {
           `}</style>
           <div className="client-grid">
             {CLIENTS.map(c => (
-              <div key={c} style={{
-                border: '1px solid var(--line)', borderRadius: 8,
-                padding: '12px 10px', textAlign: 'center',
-                fontSize: 12, fontWeight: 600, color: 'var(--ink-2)',
-                background: '#fff', lineHeight: 1.3,
+              <div key={c.name} style={{
+                border: '1px solid var(--line)', borderRadius: 10,
+                padding: '10px 8px', textAlign: 'center',
+                background: '#fff', display: 'flex',
+                flexDirection: 'column', alignItems: 'center',
+                justifyContent: 'center', gap: 6, minHeight: 72,
               }}>
-                {c}
+                <img
+                  src={c.logo}
+                  alt={c.name}
+                  loading="lazy"
+                  style={{ height: 32, width: 'auto', maxWidth: '100%', objectFit: 'contain', display: 'block' }}
+                />
+                <span style={{ fontSize: 10.5, fontWeight: 700, color: 'var(--ink-2)', lineHeight: 1.2 }}>{c.name}</span>
               </div>
             ))}
             <div style={{
-              border: '2px dashed var(--line)', borderRadius: 8,
+              border: '2px dashed var(--line)', borderRadius: 10,
               padding: '12px 10px', textAlign: 'center',
               fontSize: 12, fontWeight: 600, color: 'var(--muted)',
-              lineHeight: 1.3,
+              lineHeight: 1.3, minHeight: 72, display: 'flex',
+              alignItems: 'center', justifyContent: 'center',
             }}>
               &amp; Many<br />More
             </div>
