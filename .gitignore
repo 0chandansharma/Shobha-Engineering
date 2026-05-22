@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Videos are too large for git — host on YouTube/Vimeo/Cloudflare Stream
+public/content/videos/
