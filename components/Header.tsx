@@ -49,16 +49,12 @@ export default function Header() {
 
       {/* Main nav */}
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 40px', gap: 24 }}>
-        <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none' }}>
-          <div style={{ width: 42, height: 42, borderRadius: 8, background: 'var(--primary)', display: 'grid', placeItems: 'center' }}>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </div>
-          <div>
-            <div style={{ fontWeight: 800, fontSize: 17, color: 'var(--ink)', letterSpacing: '-0.01em', lineHeight: 1.1 }}>Shobha Engineering Workshop</div>
-            <div style={{ fontSize: 11, color: 'var(--muted)', letterSpacing: '0.14em', textTransform: 'uppercase', marginTop: 2, fontWeight: 600 }}>Manufacturers · Fabricators · Lucknow</div>
-          </div>
+        <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
+          <img
+            src="/content/logos/shobha_logo.png"
+            alt="Shobha Engineering Workshop"
+            style={{ height: 54, width: 'auto', display: 'block' }}
+          />
         </Link>
 
         <nav className="desktop-nav" style={{ display: 'flex', alignItems: 'center', gap: 2 }}>

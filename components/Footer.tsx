@@ -9,13 +9,12 @@ export default function Footer() {
         <div style={{ display: 'grid', gap: 48, gridTemplateColumns: '1.4fr 1fr 1fr 1fr' }} className="footer-grid">
 
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
-              <div style={{ width: 40, height: 40, borderRadius: 8, background: 'var(--primary)', display: 'grid', placeItems: 'center' }}>
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                  <path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              <div style={{ fontWeight: 800, fontSize: 17, color: '#fff', lineHeight: 1.1 }}>Shobha Engineering<br/>Workshop</div>
+            <div style={{ marginBottom: 16 }}>
+              <img
+                src="/content/logos/shobha_logo.png"
+                alt="Shobha Engineering Workshop"
+                style={{ height: 72, width: 'auto', display: 'block' }}
+              />
             </div>
             <p style={{ fontSize: 14, lineHeight: 1.7, color: '#94A3B8', maxWidth: 320 }}>
               Lucknow-based manufacturers and fabricators of precision iron & steel components. Quality without compromise — since 1998.

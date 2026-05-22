@@ -10,6 +10,10 @@ const BASE_URL = 'https://shobhaengineeringworkshop.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
+  icons: {
+    icon: '/content/logos/shobha_logo.png',
+    apple: '/content/logos/shobha_logo.png',
+  },
   title: {
     default: 'Shobha Engineering Workshop — Iron & Steel Fabricators, Lucknow',
     template: '%s | Shobha Engineering Workshop',
