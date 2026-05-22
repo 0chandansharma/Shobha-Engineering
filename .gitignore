@@ -40,5 +40,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Videos are too large for git — host on YouTube/Vimeo/Cloudflare Stream
-public/content/videos/
+# Original full-size videos — too large for git
+public/content/videos/workshop-video-01.mp4
+public/content/videos/workshop-video-02.mp4
+public/content/videos/workshop-video-03.mp4
+public/content/videos/stock/
+# Compressed versions (7MB total) are committed instead
+# public/content/videos/compressed/ ← included in git

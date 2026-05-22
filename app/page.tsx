@@ -90,13 +90,13 @@ const PRODUCT_PREVIEWS = [
 ];
 
 const CAROUSEL_VIDEOS = [
-  { src: '/content/videos/workshop-video-01.mp4',                  label: 'Workshop Operations',    sub: 'Live footage from our Lucknow facility', poster: '/content/images/workshop/workshop-floor-wide-BEST.jpeg' },
-  { src: '/content/videos/workshop-video-03.mp4',                  label: 'Fabrication in Progress', sub: 'Heavy steel work on the floor',          poster: '/content/images/products/product-pressure-vessel-pump-skid-01.jpeg' },
-  { src: '/content/videos/stock/stock-video-manufacturing-01.mp4', label: 'Industrial Manufacturing', sub: 'Precision fabrication processes',        poster: '/content/images/stock-pexels/stock-welding-arc-blue-portrait-01.jpg' },
-  { src: '/content/videos/stock/stock-video-manufacturing-02.mp4', label: 'Steel Processing',         sub: 'Cutting, forming, and assembly',         poster: '/content/images/stock-pexels/stock-welding-structural-steel-shed.jpg' },
-  { src: '/content/videos/stock/stock-video-manufacturing-03.mp4', label: 'Workshop Processes',       sub: 'End-to-end fabrication workflow',         poster: '/content/images/stock-pexels/stock-drilling-milling-closeup.jpg' },
-  { src: '/content/videos/stock/stock-video-manufacturing-04.mp4', label: 'Quality Work',             sub: 'Skilled workmanship on every job',        poster: '/content/images/stock-pexels/stock-grinding-sparks-closeup.jpg' },
-  { src: '/content/videos/workshop-video-02.mp4',                  label: 'Our Team at Work',         sub: 'Experienced fabricators and machinists',  poster: '/content/images/process/process-welding-pipes-worker.jpeg' },
+  { src: '/content/videos/compressed/workshop-video-01.mp4',                  label: 'Workshop Operations',    sub: 'Live footage from our Lucknow facility', poster: '/content/images/workshop/workshop-floor-wide-BEST.jpeg' },
+  { src: '/content/videos/compressed/workshop-video-03.mp4',                  label: 'Fabrication in Progress', sub: 'Heavy steel work on the floor',          poster: '/content/images/products/product-pressure-vessel-pump-skid-01.jpeg' },
+  { src: '/content/videos/compressed/stock-video-01.mp4', label: 'Industrial Manufacturing', sub: 'Precision fabrication processes',        poster: '/content/images/stock-pexels/stock-welding-arc-blue-portrait-01.jpg' },
+  { src: '/content/videos/compressed/stock-video-02.mp4', label: 'Steel Processing',         sub: 'Cutting, forming, and assembly',         poster: '/content/images/stock-pexels/stock-welding-structural-steel-shed.jpg' },
+  { src: '/content/videos/compressed/stock-video-03.mp4', label: 'Workshop Processes',       sub: 'End-to-end fabrication workflow',         poster: '/content/images/stock-pexels/stock-drilling-milling-closeup.jpg' },
+  { src: '/content/videos/compressed/stock-video-04.mp4', label: 'Quality Work',             sub: 'Skilled workmanship on every job',        poster: '/content/images/stock-pexels/stock-grinding-sparks-closeup.jpg' },
+  { src: '/content/videos/compressed/workshop-video-02.mp4',                  label: 'Our Team at Work',         sub: 'Experienced fabricators and machinists',  poster: '/content/images/process/process-welding-pipes-worker.jpeg' },
 ];
 
 const CERT_ITEMS = [
@@ -183,7 +183,7 @@ export default function HomePage() {
                     objectFit: 'cover',
                   }}
                 >
-                  <source src="/content/videos/stock/hero.mp4" type="video/mp4" />
+                  <source src="/content/videos/compressed/hero.mp4" type="video/mp4" />
                 </video>
               </div>
               <div style={{
