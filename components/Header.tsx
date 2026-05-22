@@ -54,12 +54,16 @@ export default function Header() {
 
       {/* Main nav */}
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 40px', gap: 24 }}>
-        <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
+        <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none' }}>
           <img
             src="/content/logos/shobha_logo.png"
             alt="Shobha Engineering Workshop"
-            style={{ height: 54, width: 'auto', display: 'block' }}
+            style={{ height: 52, width: 'auto', display: 'block', flexShrink: 0 }}
           />
+          <div>
+            <div style={{ fontWeight: 800, fontSize: 17, color: 'var(--ink)', letterSpacing: '-0.01em', lineHeight: 1.1 }}>Shobha Engineering Workshop</div>
+            <div style={{ fontSize: 11, color: 'var(--muted)', letterSpacing: '0.14em', textTransform: 'uppercase', marginTop: 2, fontWeight: 600 }}>Manufacturers · Fabricators · Lucknow</div>
+          </div>
         </Link>
 
         <nav className="desktop-nav" style={{ display: 'flex', alignItems: 'center', gap: 2 }}>
